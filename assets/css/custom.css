@@ -1,0 +1,48 @@
+.banner-text {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    color: #f4f4f4;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.carousel-title{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #fff;
+    line-height: 55px;
+}
+.main-btn{
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+}
+.carousel-btn{
+    width: 100%;
+    margin-top: 5px;
+}
+
+.contact-btn{
+    border-radius: 50px;
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 0 32px;
+    line-height: 46px;
+    transition: 300ms all ease;
+}
+.contact-btn:hover{
+    color: #fff;
+    background: #38f9d7;
+}
+
+.custom{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
