@@ -68,9 +68,7 @@
 }
 
 .btn-wpp, .btn-up{
-    width: 50px;
     text-align: center;
-    height: 50px;
     padding: 10px;
     border-radius: 50%;
     position: fixed;
@@ -79,22 +77,49 @@
 
 
 .btn-wpp{
-    line-height: 25px;
+    height: 60px;
+    width: 60px;
+    line-height: 30px;
     background: #25d366;
     right: 20px;
 }
 
 .btn-up{
+    height: 50px;
     background: #27d8d5;
+    width: 50px;
     line-height: 15px;
     right: 100px;
     display: none;
 }
 
-.ancla{
-    display: none;
-}
-
 .svg-about{
     margin-bottom: 10px;
+}
+
+.title{
+    text-align: center;
+    margin: 40px 0;
+}
+.client-logo-2 img{
+    height: 150px;
+}
+
+.col-lg-3:focus{
+    outline: none;
+}
+
+@media screen and (max-width: 1000px){
+    .lni-arrow-right-circle, .lni-arrow-left-circle{
+        display: none;
+    }
+}
+@media screen and (max-width: 750px){
+    .custom{
+        flex-direction: column;
+    }
+
+    .custom p{
+        margin-bottom: 50px;
+    }
 }
