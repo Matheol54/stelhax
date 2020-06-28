@@ -28,6 +28,11 @@
 
 <!-- NUESTROS CSS -->
 <link rel="stylesheet" href="assets/css/custom.css">
+
+<script type="text/javascript">(function () {
+    var ldk = document.createElement('script');
+     ldk.type = 'text/javascript'; ldk.async = true; ldk.src = 'https://s.cliengo.com/weboptimizer/5ef833b0fd780a002a8d2fc8/5ef833b1fd780a002a8d2fcb.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s); })();
+     </script>
 </head>
 <body>
 
@@ -505,29 +510,29 @@
 </div>
 <div class="col-lg-6">
 <div class="contact-form form-style-one mt-35 wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.5s">
-<form id="contact-form" action="assets/contact.php" method="post">
+<form id="client-form">
 <div class="form-input mt-15">
 <label>Name</label>
 <div class="input-items default">
-<input type="text" placeholder="Name" name="name">
+<input type="text" placeholder="Nombre" name="name" id="client-name" >
 <i class="lni-user"></i>
 </div>
 </div> 
 <div class="form-input mt-15">
 <label>Email</label>
 <div class="input-items default">
-<input type="email" placeholder="Email" name="email">
+<input type="email" placeholder="Email" name="email" id="client-email">
  <i class="lni-envelope"></i>
 </div>
 </div> 
 <div class="form-input mt-15">
 <label>Massage</label>
 <div class="input-items default">
-<textarea placeholder="Massage" name="massage"></textarea>
+<textarea placeholder="Massage" name="massage" id="client-message"></textarea>
 <i class="lni-pencil-alt"></i>
 </div>
 </div> 
-<p class="form-message"></p>
+<p class="client-message"></p>
 <div class="form-input rounded-buttons mt-20">
 <button type="submit" class="main-btn rounded-three">Submit</button>
 </div> 
@@ -612,7 +617,7 @@
 </div> 
 </footer>
 
-<a href="https://api.whatsapp.com/send?phone=5491121886155&text=Hola!%20Quiero%20consultar%20presupuesto" class="btn-wpp" target="blank"><img src="assets/fonts/whatsapp-brands.svg" alt="whatsapp" class="svg-w"></a>
+
 
 <a href="#index" class="btn-up animado"><img src="assets/fonts/chevron-up-solid.svg" alt="up" class="svg-u"></a>
 
@@ -642,6 +647,30 @@
 
 <script src="assets/js/main.js"></script>
 
-<script src="assets/js/custom.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+ <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-firestore.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBj5hMoKqc6K-N7N-VMP5W_BOxeMyl-xoM",
+      authDomain: "stelhax-clientes.firebaseapp.com",
+      databaseURL: "https://stelhax-clientes.firebaseio.com",
+      projectId: "stelhax-clientes",
+      storageBucket: "stelhax-clientes.appspot.com",
+      messagingSenderId: "14594312933",
+      appId: "1:14594312933:web:064bc51cdc8a8a200a620c",
+      measurementId: "G-M3KE6XX4VR"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+  <script src="assets/js/custom.js"></script> 
 </body>
 </html>

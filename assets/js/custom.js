@@ -1,3 +1,4 @@
+
 $(window).scroll( () => {
     if($(this).scrollTop() > 0){
         $('.btn-up').slideDown(300)
@@ -6,3 +7,29 @@ $(window).scroll( () => {
 
     }
 })
+const db = firebase.firestore();
+
+const clientForm = document.getElementById('client-form');
+
+const saveClient = (name,email,message) =>
+    db.collection('stelhax-clientes').doc().set({
+     name,
+     email,
+	 message
+});
+
+
+
+clientForm.addEventListener('submit', async (e) =>{
+    console.log(clientForm);
+    e.preventDefault();
+
+    const name = clientForm['client-name'];
+    const email = clientForm['client-email'];
+	const message = clientForm['client-message'];
+
+    await saveClient(name.value,email.value,message.value);
+
+    clientForm.reset();
+
+});
