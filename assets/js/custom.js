@@ -1,4 +1,3 @@
-
 $(window).scroll( () => {
     if($(this).scrollTop() > 0){
         $('.btn-up').slideDown(300)
@@ -21,7 +20,6 @@ const saveClient = (name,email,message) =>
 
 
 clientForm.addEventListener('submit', async (e) =>{
-    console.log(clientForm);
     e.preventDefault();
 
     const name = clientForm['client-name'];
