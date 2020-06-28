@@ -58,3 +58,43 @@
 .type-page{
     margin-top: 10px;
 }
+
+.svg-u{
+    width: 60%;
+}
+
+.svg-w{
+    width: 90%;
+}
+
+.btn-wpp, .btn-up{
+    width: 50px;
+    text-align: center;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+}
+
+
+.btn-wpp{
+    line-height: 25px;
+    background: #25d366;
+    right: 20px;
+}
+
+.btn-up{
+    background: #27d8d5;
+    line-height: 15px;
+    right: 100px;
+    display: none;
+}
+
+.ancla{
+    display: none;
+}
+
+.svg-about{
+    margin-bottom: 10px;
+}
