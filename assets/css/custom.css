@@ -126,9 +126,44 @@
     background: #eee;
 }
 
+.contact-area{
+    background: #fff;
+}
+
+.contact-area .container {
+    display: flex;
+}
+
+.title-contact{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.contact-area .single-contact-box{
+    box-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+
+.icon-contact{
+    width: 60px;
+}
+
+.link-contact{
+    color: #000;
+    transition: 300ms all ease;
+}
+
+.link-contact:hover{
+    text-decoration: underline;
+    color: #27d8d5;
+}
 @media screen and (max-width: 1000px){
     .lni-arrow-right-circle, .lni-arrow-left-circle{
         display: none;
+    }
+
+    .contact-area .container {
+        display: flex;
+        flex-direction: column;
     }
 }
 @media screen and (max-width: 750px){
