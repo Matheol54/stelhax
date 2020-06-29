@@ -150,6 +150,11 @@
 .link-contact{
     color: #000;
     transition: 300ms all ease;
+    font-size: 1rem;
+}
+
+.box-title{
+    font-weight: bold;
 }
 
 .link-contact:hover{
@@ -173,5 +178,9 @@
 
     .custom p{
         margin-bottom: 50px;
+    }
+
+    .call-action-area{
+        padding: 15px 0;
     }
 }
