@@ -157,10 +157,38 @@
     font-weight: bold;
 }
 
+.services-icon{
+    text-align: center;
+}
+
+.single-services{
+    min-height: 20rem;
+}
+
+.services-title{
+    margin: 10px;
+    color: #27d8d5;
+    font-weight: bold;
+}
+
+.services-content{
+    cursor: default;
+}
+
 .link-contact:hover{
     text-decoration: underline;
     color: #27d8d5;
 }
+
+.icon-cancelar{
+    cursor: pointer;
+    border: 1px solid cyan;
+}
+
+.icon-service{
+    width: 60px;
+}
+
 @media screen and (max-width: 1000px){
     .lni-arrow-right-circle, .lni-arrow-left-circle{
         display: none;

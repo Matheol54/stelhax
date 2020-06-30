@@ -1651,16 +1651,9 @@ p {
     -o-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s; }
   .single-services:hover {
-    background-color: #38f9d7;
     -webkit-box-shadow: 0px 5px 30px 0px rgba(254, 81, 150, 0.3);
     -moz-box-shadow: 0px 5px 30px 0px rgba(254, 81, 150, 0.3);
     box-shadow: 0px 5px 30px 0px rgba(254, 81, 150, 0.3); }
-    .single-services:hover .services-icon i {
-      color: #fff; }
-    .single-services:hover .services-content .services-title a {
-      color: #fff; }
-    .single-services:hover .services-content .text {
-      color: #fff; }
 
 /*===========================
       16.PRICING css 
