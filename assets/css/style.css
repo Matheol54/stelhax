@@ -2193,8 +2193,7 @@ p {
     22.HEADER css 
 ===========================*/
 .footer-area .footer-widget {
-  padding-top: 90px;
-  padding-bottom: 120px; }
+  padding: 40px; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .footer-area .footer-widget {
       padding-top: 70px;
