@@ -201,6 +201,11 @@
     color: #ccc;
 }
 
+.banner-text .text{
+    margin-bottom: 1rem;
+}
+
+
 @media screen and (max-width: 1000px){
     .lni-arrow-right-circle, .lni-arrow-left-circle{
         display: none;
