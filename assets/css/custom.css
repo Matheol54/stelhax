@@ -20,7 +20,7 @@
     font-weight: 700;
     margin-bottom: 5px;
     color: #fff;
-    line-height: 55px;
+    
 }
 .main-btn{
     display: inline-block;
@@ -207,12 +207,6 @@
     color: #ccc;
 }
 
-.banner-text .text{
-    margin: 2rem 0;
-    width: 50%;
-    transform: translateX(50%);
-}
-
 .carousel-sub-title{
     color: #f4f4f4;
     font-size: 9rem;
@@ -265,9 +259,7 @@
         padding-bottom: 4rem;
     }
 
-    .banner-text .text{
-        width: 100%;
-        transform: none;
-        margin: 1rem 0;
+    .banner-text{
+        height: 100%;
     }
 }
