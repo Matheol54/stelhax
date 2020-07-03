@@ -26,6 +26,7 @@
     display: inline-block;
     font-weight: 700;
     text-align: center;
+    margin-top: 1rem;
 }
 .carousel-btn{
     width: 100%;
@@ -36,12 +37,16 @@
     border-radius: 50px;
     display: inline-block;
     font-weight: 700;
+    font-size: 20px;
     text-align: center;
     color: #fff;
     border: 2px solid #fff;
-    padding: 0 32px;
+    padding: 10px 32px;
     line-height: 46px;
     transition: 300ms all ease;
+    background: rgba(0,0,0,.2);
+    transform: translateY(40%);
+    text-transform: uppercase;
 }
 .contact-btn:hover{
     color: #fff;
@@ -52,6 +57,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
 }
 
 .year{
@@ -150,7 +156,7 @@
 .link-contact{
     color: #000;
     transition: 300ms all ease;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .box-title{
@@ -197,14 +203,33 @@
 
 .footer-logo .text{
     margin-top: 2rem;
-    margin-bottom: 6rem;
+    margin-bottom: 1rem;
     color: #ccc;
 }
 
 .banner-text .text{
-    margin-bottom: 1rem;
+    margin: 2rem 0;
+    width: 50%;
+    transform: translateX(50%);
 }
 
+.carousel-sub-title{
+    color: #f4f4f4;
+    font-size: 9rem;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.carousel-promo-title{
+    font-weight: 600;
+    color: #f4f4f4;
+    font-size: 2rem;
+
+}
+
+.client-active div{
+    pointer-events: none;
+}
 
 @media screen and (max-width: 1000px){
     .lni-arrow-right-circle, .lni-arrow-left-circle{
@@ -214,6 +239,10 @@
     .contact-area .container {
         display: flex;
         flex-direction: column;
+    }
+
+    .carousel-sub-title{
+        font-size: 6rem;
     }
 }
 @media screen and (max-width: 750px){
@@ -227,5 +256,18 @@
 
     .call-action-area{
         padding: 15px 0;
+    }
+
+    .contact-btn{
+        transform:none;
+    }
+    .footer-logo .text{
+        padding-bottom: 4rem;
+    }
+
+    .banner-text .text{
+        width: 100%;
+        transform: none;
+        margin: 1rem 0;
     }
 }
